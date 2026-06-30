@@ -1,0 +1,193 @@
+body {
+    background-color: grey;
+}
+
+/*Nav styles*/
+nav {
+    font-size: 16px;
+    position: fixed;
+    /*Places same place wheather page is moved or not*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    /*padding 1st value top, bottom, second value left, right*/
+    z-index: 1000;
+    /*placement ontop or bottom on other elements*/
+    background-color: rgb(67, 66, 68);
+    box-shadow: 0 2px 10px rgba(56, 56, 56, 0.52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+    font-size: 1.25rem;
+    color: aqua;
+}
+
+nav h2 {
+    float: left;
+    margin: 0.5rem;
+    color: aquamarine;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav a:link {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    font-family: sans-serif;
+    color: aquamarine;
+    transition: color 0.3s, bottom-border 0.3s;
+    padding-bottom: 5px;
+    position: relative;
+    border-bottom: 2px transparent solid;
+}
+
+nav a:hover {
+    color: rgb(4, 146, 146);
+    border-bottom: 2px solid rgb(4, 146, 146);
+    /*Adds underline to links on hover */
+
+}
+
+nav li {
+    margin: 0 15px;
+    /*Spacing between links left to right*/
+}
+
+nav .nav-social {
+    display: flex;
+}
+
+nav p {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.name {
+    margin-left: 10px;
+    color: aqua;
+    font-family: "Pacifico", cursive;
+    font-size: 1.25rem;
+    justify-self: center;
+}
+
+.mobile-img {
+    display: none;
+}
+
+section img {
+    height:200px;
+    max-width:400px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 100vw;
+}
+
+.section-1 {
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+section aside {
+    width: 50%;
+}
+
+.long-buttons {
+    display: block;
+}
+
+.long-buttons button {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+.darker-button {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.section-3 p {
+    display: flex;
+}
+
+.section-3 i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.section-2, .section-4 {
+    background-color: black;
+    color: grey;
+}
+
+
+@media screen and (max-width:600px) {
+    .nav{
+        justify-content: space-around;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .mobile-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+        background-color: white;
+    }
+
+    .hide-mobile{
+        display: none;
+        justify-content: center;
+    }
+
+    .section-3 .hide-mobile {
+        display: none;
+    }
+
+    section {
+        height: 40vh;
+        width: 100vw;
+    }
+
+    .section-1 {
+        height: 10vh;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .section-3 {
+        background-color: white;
+    }
+
+    .section-4 aside{
+        width: 95vw;
+    }
+}
