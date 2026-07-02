@@ -1,4 +1,4 @@
-C1-Personal-Portfolio-Page
+C2-Responsive-Design
 Challange 2 of 13 in my coding journey. Following the template provided in the repository.
 
 Dependencies:
